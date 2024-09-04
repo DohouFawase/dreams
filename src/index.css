@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.responsive-text {
+  font-size: clamp(1.5rem, 5vw + 1rem, 4rem);
+}
+
+
+/* .video{
+  position: relative;
+  z-index: -1;
+}
+
+.video::before{
+  position: absolute;
+  content: "e";
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: black;
+  z-index: 99999;
+  height: 100vh;
+} */
+
+@layer utilities {
+  .square {
+    aspect-ratio: 1/1;
+  }
+}
